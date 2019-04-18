@@ -50,3 +50,9 @@ h1{
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
+.table{
+    background-color: #63399d;
+    color:#fff;
+    border-color: #ffe26d;
+}
