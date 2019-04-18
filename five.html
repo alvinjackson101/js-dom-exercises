@@ -82,14 +82,13 @@
                 <div class="card-body">
                    
                         <pre type="text/javascript">
-function getAttributes() {
-    var x = document.getElementById("w3r").hreflang;
-    var y = document.getElementById("w3r").rel;
-    var z = document.getElementById("w3r").href= "https://www.w3resource.com/";
-    var a = document.getElementById("w3r").target;
-    var b = document.getElementById("w3r").type;
-    document.getElementById("solution").innerHTML = z  + x  + y + a + b ;
-    
+function insertRow(){
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "New Cell1";
+    cell2.innerHTML = "New Cell2";
 }
 
                         </pre>
