@@ -1,0 +1,50 @@
+.jumbotron{
+
+    background-image: url(main-pic.png);
+}
+
+h1{
+
+    font-family: arial;
+
+}
+
+.content {
+
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: 
+    max-width: 70%;
+    margin: auto;
+    padding: 10px;
+    font-family: arial;
+}
+
+.picture{
+
+    height: 200px;
+    width: auto;
+}
+#answer{
+
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+#dropdownMenuLink{
+
+    background-color: #ffe26d;
+    color: #6e44a7;
+    border: 3px solid #6e44a7;
+    border-radius: 20px;
+}
+
+#jsstyle{
+
+    background-color: #6e44a7;
+    color: #fff;
+    border: 3px solid #000;
+    border-radius: 20px;
+    padding: 8px 50px 8px 50px;
+}
