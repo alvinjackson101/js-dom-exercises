@@ -44,7 +44,9 @@ h1{
 
     background-color: #6e44a7;
     color: #fff;
-    border: 3px solid #000;
+    border: 3px solid #63399d;
     border-radius: 20px;
     padding: 8px 50px 8px 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
