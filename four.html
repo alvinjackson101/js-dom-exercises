@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>JS DOM Exercises</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <link rel="shortcut icon" type="image/png" href="js-dom-logo.png">
+    </head>
+
+    <body>
+
+        <!-- Image and text -->
+        <nav class="navbar navbar-light bg-light">
+         <a class="navbar-brand" href="https://alvinjackson101.github.io/js-dom-exercises/">
+            <img src="js-dom-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        JS & DOM
+        </a>
+        </nav>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Javascript and the DOM</h1>
+              <p class="lead">Just choose an topic below.</p>
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" role="button" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                  Choose a Number
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/one.html">01</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/two.html">02</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/three.html">03</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/four.html">04</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/five.html">05</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/six.html">06</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/seven.html">07</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/eight.html">08</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-xercises/nine.html">09</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/ten.html">10</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/eleven.html">11</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/twelve.html">12</a>
+                    <a class="dropdown-item" href="https://alvinjackson101.github.io/js-dom-exercises/thirteen.html">13</a>
+                </div>
+              </div>
+            </div>
+        
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <div class="container">
+            <h1>Change Background Color</h1>
+   
+            <p id ='text'>
+                <p><a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a></p>
+                <button type="submit" id="jsstyle" class="btn btn-primary" onclick="getAttributes()" href="">Get Attributes</button>
+            </p> 
+
+            <p id="solution"></p>
+
+            <script>
+                function getAttributes() {
+                    var x = document.getElementById("w3r").hreflang;
+                    var y = document.getElementById("w3r").rel;
+                    var z = document.getElementById("w3r").href= "https://www.w3resource.com/";
+                    var a = document.getElementById("w3r").target;
+                    var b = document.getElementById("w3r").type;
+                    document.getElementById("solution").innerHTML = z  + x  + y + a + b ; 
+                }
+            </script>
+            
+            <div class="card">
+                <div class="card-body">
+                   
+                        <pre type="text/javascript">
+function getAttributes() {
+    var x = document.getElementById("w3r").hreflang;
+    var y = document.getElementById("w3r").rel;
+    var z = document.getElementById("w3r").href= "https://www.w3resource.com/";
+    var a = document.getElementById("w3r").target;
+    var b = document.getElementById("w3r").type;
+    document.getElementById("solution").innerHTML = z  + x  + y + a + b ;
+    
+}
+
+                        </pre>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+
+    </html>
