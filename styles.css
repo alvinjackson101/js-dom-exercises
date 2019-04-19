@@ -5,6 +5,12 @@
     min-height: 400px;
 }
 
+.container{
+
+    padding-top: 40px;
+
+}
+
 h1{
 
     font-family: arial;
