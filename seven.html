@@ -51,32 +51,52 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
         <div class="container">
-            <h1>Identify a particular cell.</h1>
-   
-            <p id ='text'>
-
-                <table class="table table-bordered bg-dark" id="mytable">
+                <h1>Create a table.</h1>
+       
+               <p id ='text'>
     
-                    <tr><td>Row1 cell1</td>
-                    <td>Row1 cell2</td></tr>
-                    <tr><td>Row2 cell1</td>
-                    <td>Row2 cell2</td></tr>
-                    <tr><td>Row3 cell1</td>
-                    <td>Row3 cell2</td></tr>
+                        <div class="row">
+                            <div class="col">
+                                <label for="exampleInputEmail1">Rows</label>
+                                <input type="text" class="form-control" id="row" placeholder="Enter number of rows">
+                            </div>
+    
+                            <div class="col">
+                                <label for="exampleInputPassword1">Columns</label>
+                                <input type="text" class="form-control" id="column" placeholder="Enter number of columns">
+                            </div>
+    
+                        </div>
+    
+                        <button type="submit" id="jsstyle" class="btn btn-primary" onclick="createTable()">Create Table</button>
+    
+                </p>
+               <!--<table id="myTable" border="1"> 
+                </table>-->
+                <table class="table table-bordered bg-dark" id="myTable"></table>
+    
+                <script>
+                    function createTable(){
+                        console.log("Creating Table...")
+                        var a = document.getElementById("row").value;
+                        var b = document.getElementById("column").value;
 
-                </table>
-                <br>
-             
-                    <button type="submit" id="jsstyle" class="btn btn-primary" onclick="changeContent()" href="">Change Content</button>
-              
-            </p>
-                    
-            <script>
-                function changeContent(){
-                    var mytable = document.getElementById("mytable");
-                    mytable.rows[2].cells[0].innerHTML = "Hello";
+
+                        //rn = window.prompt("Input number of rows", 1);
+                        //cn = window.prompt("Input number of columns",1);
+                  
+                    for(var r = 0; r < a; r++){
+                        var table = document.getElementById("myTable")
+                        var row = table.insertRow(r);
+
+                        for(var c = 0; c < b; c++){
+                            var y =  row.insertCell(c);
+                            y.innerHTML="Row-"+r+" Column-"+c; 
+                            // document.getElementById("display").innerHTML ="Row-"+r+" Column-"+c; 
+                        }
+                    }
                 }
-            </script>
+                </script>
             
             <div class="card">
                 <div class="card-body">
