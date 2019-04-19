@@ -51,35 +51,42 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
         <div class="container">
-            <h1>Count and display items in dropdown list</h1>
+            <h1>Calculate volume of sphere.</h1>
        
             <p id ='text'>
     
-                <select id="colorSelect">
-                    <option>Red</option>
-                    <option>Green</option>
-                    <option>Blue</option>
-                    <option>White</option>
-                    </select>
-                    <button type="submit" id="jsstyle1" class="btn btn-primary" onclick="getOptions()">Count & Display</button>       
+                <div><img src="sphere.png"/></div><br>
+                <p>Input radius value and get the volume of a sphere.</p>
+                <div class="row">
+                    <div class="col">
+                         <label for="exampleInputEmail1"></label>
+                        <input type="text" class="form-control" id="radius" placeholder="Radius">
+                    </div>
+
+                    <div class="col">
+                        <label for="exampleInputPassword1"></label>
+                        <input type="text" class="form-control" id="volume" placeholder="Volume">
+                    </div>
+
+                 </div>
+
+                <button type="submit" id="jsstyle" class="btn btn-primary" onclick="volumeSphere()">Calculate</button>
     
             </p>
-            
+
             <p id="display"></p>
     
                 <script>
-                    function getOptions(){
-                        var x = document.getElementById ("colorSelect");
-                        var txt1 = "No. of items : ";
-                        var i;
-                        l=document.getElementById("colorSelect").length;  
-                        txt1 = txt1+l;
+                    function volumeSphere(){
+                        var volume;
+                        var radius = document.getElementById('radius').value;
+                        radius = Math.abs(radius);
+                        volume = (4/3) * Math.PI * Math.pow(radius, 3);
+                        volume = volume.toFixed(4);
+                        document.getElementById('volume').value = volume;
+                        return false;
+                    } 
 
-                            for (i=0;i < x.length; i++){
-                            txt1 = txt1 + "\n" + x.options[i].text;
-                        }
-                            alert(txt1);
-                    }
                 </script>
             
             <div class="card">
@@ -87,17 +94,15 @@
                    
                         <pre type="text/javascript">
 
-function getOptions(){
-    var x = document.getElementById ("colorSelect");
-    var txt1 = "No. of items : ";
-    var i;
-    l=document.getElementById("colorSelect").length;  
-    txt1 = txt1+l;
-for (i=0;i < x.length;i++){
-txt1 = txt1 + "\n" + x.options[i].text;
-        }
-    alert(txt1);
-}
+function volumeSphere(){
+    var volume;
+    var radius = document.getElementById('radius').value;
+    radius = Math.abs(radius);
+    volume = (4/3) * Math.PI * Math.pow(radius, 3);
+    volume = volume.toFixed(4);
+    document.getElementById('volume').value = volume;
+    return false;
+} 
                         </pre>
                 </div>
             </div>
