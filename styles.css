@@ -59,8 +59,28 @@ h1{
     margin-top: 10px;
 }
 
+#jsstyle1{
+
+    background-color: #6e44a7;
+    color: #fff;
+    border: 3px solid #63399d;
+    padding: 8px 16px 8px 16px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
 .table{
     background-color: #63399d;
     color:#fff;
     border-color: #ffe26d;
+}
+
+#colorselect{
+
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #63399d;
+    height: 35px;
+    width: auto;
 }
